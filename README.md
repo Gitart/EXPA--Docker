@@ -46,6 +46,7 @@
 * **docker port [container-name]** - просмотреть порты контейнера
 * **docker run -p 8000:3000 [image-name]** - запустить контейнер с перебросом запроса с 0.0.0.0:8000 -> 3000. Слева порт локальный - справа порт Докера, указанный в `Dockerfile (expose)` на который будет переброс запросов
 * **docker push [nickname]/[image-name]** - запушить свой образ на свой репозиторий 
+* **docker commit [container-id] [image-name:tag]** - сделать из контейнера образ
 
 ## Commands for few
 * **sudo docker kill $(sudo docker ps -q)** - убить все контейнеры. `-q` - показать только ID 
@@ -90,6 +91,9 @@ docker build -t [your-nickname]/[your-image-name] .
 > * Попробовать найти уже нужный образ с наименьшим размером, например: `alpine-node - 67mb`
 > * Не устанавливать отладочные иструменты, например: `vim` или `curl`
 > * Больше здесь: https://hackernoon.com/tips-to-reduce-docker-image-sizes-876095da3b34
+
+**2)** Можно ли из контейнера сделать образ?
+> Да можно `docker commit [container-id] [image-name:tag]`
 
 
 
