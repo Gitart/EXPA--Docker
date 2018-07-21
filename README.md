@@ -1,5 +1,18 @@
 # Docker
 
+#### Содержание 
+* Basic info
+* Tools
+* Commands
+* Commands for few
+* Стоит обрать внимание 
+* Docker push and pull image
+* Dockerfile - собираем образ на основе инструкций
+* Docker compose - обьеденяем образы и собираем в один
+
+
+--- 
+
 
 ## Basic info
 * **Образ** - это набор файлов, необходимых для работы приложения на голой машине с установленным Docker.
@@ -32,7 +45,7 @@
 * **docker run -p 8000:3000 [image-name]** - запустить контейнер с перебросом запроса с 0.0.0.0:8000 -> 3000. Слева порт локальный - справа порт Докера, указанный в `Dockerfile (expose)` на который будет переброс запросов
 * **docker push [nickname]/[image-name]** - запушить свой образ на свой репозиторий 
 
-## Commands to a few
+## Commands for few
 * **sudo docker kill $(sudo docker ps -q)** - убить все контейнеры. `-q` - показать только ID 
 * **sudo docker rm $(sudo docker ps -q -a)** - удалить все контейнеры
 * **sudo docker rmi $(sudo docker images -q)** - удалить все образы
