@@ -1,7 +1,6 @@
-
 # lets us specify which base image from Docker Hub we want to build from. 
 # In our case, we are using the latest version of the official node image.
-FROM node:latest
+FROM mhart/alpine-node:base-10
 
 # lets us execute a command, which in our case is to create a new directory.
 # The -p flag will create nested directories, but only if they don't exist already.
@@ -25,4 +24,4 @@ COPY . /usr/src/app
 EXPOSE 8000
 
 # sets the default command to execute our container.
-CMD [ "node", "hapi" ]
+CMD [ "node", "app" ]
