@@ -5,7 +5,7 @@
 * **Tools**
 * **Commands**
 * **Commands for few**
-* **Стоит обрать внимание **
+* **Стоит обрать внимание**
 * **Docker push and pull image**
 * **Dockerfile - собираем образ на основе инструкций**
 * **Docker compose - обьеденяем образы и собираем в один**
