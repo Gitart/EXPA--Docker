@@ -1,4 +1,8 @@
-## Example of app on node js with Hapi
+## Пример работы Node в контейнере
+
+Что используеться:
+* `mhart/alpine-node:base-10` - образ alpine OS + Node без npm
+* Hapi.js - node framework
 
 #### Quick start
 ```bash
