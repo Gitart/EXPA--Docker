@@ -38,7 +38,22 @@
 ## Стоит обрать внимание 
 * при создание образа командой `docker build -t [image-name] .` в конце - Не забудьте точку !
 * Приложение которое переносите в docker-образ меняйте хост с `localhost` -> `0.0.0.0`
+* `CMD`  может быть только одно в Dockerfile
 
+## Docker push and pull image
+```bash
+# Enter your credentials
+docker login
+
+# Rename your image if it is not like: nickanme/image-name
+docker tag my_image nickname/my_image
+
+# Push your image to your repositories
+docker push nickname/my_image
+
+# Pull this image
+docker pull nickname/my_image
+```
 
 ## Dockerfile - собираем образ на основе инструкций
 Построить образ на основе `Dockerfile`
