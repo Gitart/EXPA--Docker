@@ -5,7 +5,7 @@
 # building image from dockerfile
 sudo docker build -t nodetest .
 
-# running image
+# check images
 sudo docker images
 
 # runnig image
