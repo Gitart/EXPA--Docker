@@ -22,4 +22,7 @@ sudo docker logs [container-id]
 # make request 
 curl -i localhost:[your-port from docker ps]
 
+# OR if windows
+curl -i 192.168.99.100:[your-port from docker ps]
+
 ```
