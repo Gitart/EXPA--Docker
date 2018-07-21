@@ -23,6 +23,7 @@
 
 
 ## Tools
+* FromLatest - https://www.fromlatest.io/#/ - для оптимизации `Dockerfile`
 * Docker Toolbox - десктопное приложение для Windows и Mac
 * Docker Client (CLI) -  только для Linux
 
